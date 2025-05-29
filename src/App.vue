@@ -7,16 +7,16 @@
     <B class="b-container"></B>
     <C class="c-container"></C>
     <D class="d-container"></D>
-    <E class="e-container"></E>
+    <!-- <E class="e-container"></E> -->
   </div>
 </template>
 
 <style scoped>
 .grid-container {
   display: grid;
-  grid-template-columns: 700px 600px 600px 600px 600px;
+  grid-template-columns: 450px 400px 500px;
   /* Width A+D+E+G */
-  grid-template-rows: 50px 800px 1000px;
+  grid-template-rows: 50px 550px 500px;
   /* Height Logo + A + C */
   gap: 5px;
   /* Grid gap */
@@ -40,7 +40,7 @@
 }
 
 .b-container {
-  grid-column: 1 / 3;
+  grid-column: 1 / 2;
   grid-row: 3;
   border: 2px solid #d4d4d4;
   border-radius: 3px;
@@ -54,16 +54,16 @@
 }
 
 .d-container {
-  grid-column: 3 / -1;
+  grid-column: 2 / -1;
   grid-row: 3;
   border: 2px solid #d4d4d4;
   border-radius: 3px;
 }
 
-.e-container {
+/* .e-container {
   grid-column: 4 / -1;
   grid-row: 2;
   border: 2px solid #d4d4d4;
   border-radius: 3px;
-}
+} */
 </style>
